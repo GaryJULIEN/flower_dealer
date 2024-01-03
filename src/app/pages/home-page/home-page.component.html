@@ -1,0 +1,16 @@
+<div class="logo">
+    <p class="big-size">
+        <span>FL</span>
+        <img ngSrc="../../../assets/img/martaya.png" width="60" height="62" alt="">
+        <span>WER</span>
+    </p>
+    <p>DEALER</p>
+</div>
+
+<menu>
+    @for (item of menuItems; track item.label) {
+        @if (item.condition) {
+            <p [routerLink]="item.href">{{ item.label }}</p>
+        }
+    }
+</menu>

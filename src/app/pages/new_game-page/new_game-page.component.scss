@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  
+  .fade-out {
+    transition: 2s;
+    opacity: 0;
+  }
+  .fade-in {
+    transition: 2s;
+    opacity: 1;
+  }
+}
