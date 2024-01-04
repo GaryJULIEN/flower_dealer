@@ -1,0 +1,4 @@
+<div class="grid justify-content-center align-content-between w-screen h-full relative">
+    <img class="col-12 w-7 block" [ngStyle]="{'transition': transitionTime+'ms'}" [ngClass]="{'opacity-0': opacity0(), 'translate-x-100': imgToRight(), '-translate-x-100': imgToLeft()}" [src]="currentScreenData().imgSrc" alt="">
+    <p class="col-12 m-0 text-center" [ngStyle]="{'transition': transitionTime+'ms'}" [ngClass]="{'opacity-0': opacity0(), 'translate-x-100': textToRight(), '-translate-x-100': textToLeft()}">{{ currentScreenData().text }}</p>
+</div>
