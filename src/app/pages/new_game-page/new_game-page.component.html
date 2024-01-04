@@ -1,2 +1,6 @@
-<img src="" alt="">
-<p [ngClass]="{'fade-out': fadeOut, 'fade-in': fadeIn}">{{ storyTexte() }}</p>
+@if (gameStep() === newGameStep.INITIALIZATION) {
+    <p>INITIALISATION</p>
+} 
+@else if (gameStep() === newGameStep.STORY_TELLING){
+    <app-story-telling (storyTellingEnd)="onStoryTellingEnd($event)"></app-story-telling>
+}

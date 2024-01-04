@@ -30,9 +30,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/swiper/css/swiper.css",
+              "node_modules/primeflex/primeflex.css",
+              "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/swiper/js/swiper.js"
+            ]
           },
           "configurations": {
             "production": {
